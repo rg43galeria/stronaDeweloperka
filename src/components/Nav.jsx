@@ -28,7 +28,7 @@ const Nav = () => {
           </Link>
           
           <Link to="offer" className="navbaritem">
-            Mieszkania/Lokale
+            Lokale
           </Link>
           <Link to="offer" className="navbaritem">
             Galeria

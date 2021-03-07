@@ -30,42 +30,7 @@ const TypA = () => {
 
   return (
     <Row>
-      <div
-        data-aos="fade-right"
-        data-aos-duration="2000"
-        className="hoverable z-depth-2"
-      >
-        <Row>
-          <Col s={12} m={8}>
-            {" "}
-            <img
-              src="https://img.lovepik.com/original_origin_pic/18/05/20/adc00a4eae7b2857a3d6c766a9f5e5a1.png_wh860.png"
-              width="100%"
-            />
-          </Col>
-          <Col s={12} m={4}>
-            <div className="left-align">
-              <h3>
-                Układ Lokali
-                <Divider />
-              </h3>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus
-              <Row/>
-              <Button className="z-depth-2  " large node="a" href="typb">
-       Zarazerwuj lokal
-      </Button>
-            </div>
-          </Col>
-        </Row>
-      </div>
+    
       <Row />
       <div
         data-aos="fade-right"
@@ -79,7 +44,7 @@ const TypA = () => {
                 <div className="valign-wrapper">
                   <div className="left-align">
                     <h3>
-                      Opis Lokalu, standart
+                      Opis Lokalu
                       <Divider />
                     </h3>
                     PageMaker including versions of Lorem Ipsum. Why do we use
@@ -96,12 +61,16 @@ const TypA = () => {
                     (injected humour and the like).
                   </div>
                 </div>
+                <img src="" width="100%"/> tutaj dac m2
+                <img src="" width="100%"/> tutaj dac miejsce parkingowe
+                <img src="" width="100%"/> tutaj dac m2 tarasu
+                <img src="" width="100%"/> tutaj dac liczbe pokoi
               </Col>
             </Row>
           </Col>
           <Col s={12} m={4}>
             {" "}
-            <img src={planparter1} width="100%" />
+            <img src={planparter1} width="100%" /> tutaj dac rzut 3d
           </Col>
         </Row>
       </div>

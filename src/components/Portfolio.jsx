@@ -13,7 +13,7 @@ import marketing from "../components/svg/marketing.svg";
 import interrior from "../components/svg/interrior.svg";
 import bim from "../components/svg/bim.svg";
 import { Link} from "react-router-dom";
-
+import Standart from './Standart'
 const Portfolio = () => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
@@ -48,20 +48,18 @@ const Portfolio = () => {
          horizontal
        >
          <h5>
-           Projekt Architektoniczny <Divider />
+           Nowoczesne budownictwo <Divider />
          </h5>
          <div className="left-align">
-           Oferujemy przygotowanie projektu wnętrz prywatnych oraz
-           komercyjnych w pełnym zakresie, wraz z nadzorem. Zajmujemy się
-           koordynacją branżystów oraz mnijeszymi formami architektonicznymi
-           takimi jak np. elewacje budynków historycznych(renowacja,
-           oświetlenie, przebudowa).
+         Dostępne w ofercie Real Invest segmenty to domy, których użytkowanie jest znacznie tańsze niż w przypadku starszych obiektów budowlanych. Jeśli zdecydujesz się na zamontowanie na dachu kolektorów słonecznych, będziesz mógł obniżyć rachunki za gaz i prąd nawet o kilkadziesiąt procent. Szczelne okna zapobiegają utracie ciepła. Ściany budynków pokryte są estetycznie wyglądającą, odporną na zabrudzenia elewacją.
+
          </div>{" "}
        </Card>
      </Col>
    </div>
    
-   <Row/><div
+   <Row/>
+   <div
    data-aos="fade-right"
    data-aos-duration="2000"
    className="hoverable z-depth-2"
@@ -78,17 +76,34 @@ const Portfolio = () => {
          }
          horizontal
        >
+        <Standart/>
+
+       </Card>
+     </Col>
+     </div>
+     <Row/>
+     <div
+   data-aos="fade-right"
+   data-aos-duration="2000"
+   className="hoverable z-depth-2"
+ >
+     <Col m={10} s={12} push="m1">
+       <Card
+         actions={[
+           <a className="black-text" key="1" href="contact">
+             Wyślij zapytanie ofertowe
+           </a>,
+         ]}
+         header={
+           <CardTitle image={other2} />
+         }
+         horizontal
+       >
          <h5>
-         Materiały Marketingowe <Divider />
+         Ogrodek do kazdego lokalu <Divider />
          </h5>
          <div className="left-align">
-         Przygotowujemy pełny zestaw materiałów marketingów potrzebnych przy sprzedaży nieruchomości:
-         <li>Interaktywny model 3d</li>
-         <li>Wizualizacje</li>
-         <li>Animacje</li>
-         <li>Strony internetowe (React)</li>
-         <li>Materiały do druku</li>
-
+         Do kazdego lokalu  przydzielony jest ogrodek. Ogrodki od strony wejscia do lokali przynaleza do mieszkan na pietrze, ogrodki od drugiej strony przynaleza do mieszkan na parterze.
          </div>{" "}
        </Card>
      </Col>
@@ -115,8 +130,7 @@ const Portfolio = () => {
            Projekt Wnętrz <Divider />
          </h5>
          <div className="left-align">
-           Oferujemy przygotowanie projektu wnętrz prywatnych oraz
-           komercyjnych w pełnym zakresie, wraz z nadzorem.
+           Oferujemy przygotowanie projektu wnętrz oraz wykonczenia lokali na zyczenie. Koszt oraz czas realizacji takiego zamowienia bedzie dostosowany do Panstwa preferencji i wymagan.
          </div>{" "}
        </Card>
      </Col>
@@ -138,7 +152,7 @@ const Portfolio = () => {
          horizontal
        >
          <h5>
-           Model 3D Biblioteka BIM <Divider />
+           Lokale na parterze <Divider />
          </h5>
          <div className="left-align">
            Współpracujemy z producentami mebli, oświetlenia oraz linii
@@ -165,7 +179,7 @@ const Portfolio = () => {
          horizontal
        >
          <h5>
-           Obsługa Firm <Divider />
+           Lokale na pietrze <Divider />
          </h5>
          <div className="left-align">
            Świadczymy usługi w zakresie doradztwa
@@ -182,39 +196,8 @@ const Portfolio = () => {
        </Card>
      </Col>
      </div>
-     <Row/><div
-   data-aos="fade-right"
-   data-aos-duration="2000"
-   className="hoverable z-depth-2"
- >
-     <Col m={10} s={12} push="m1">
-       <Card
-         actions={[
-           <a className="black-text" key="1" href="contact">
-             Wyślij zapytanie ofertowe
-           </a>,
-         ]}
-         header={
-           <CardTitle image={other2} />
-         }
-         horizontal
-       >
-         <h5>
-         Inne <Divider />
-         </h5>
-         <div className="left-align">
-         Zajmujemy się również:
-<br/>
--wykonywaniem inwestycji   'pod klucz'
-<br/>
--projektami oświetlenia
-<br/>
--projektami znaków graficznych
-         </div>{" "}
-       </Card>
-     </Col>
-     </div>
-     
+     <Row/>
+
    </Row>
 
 );

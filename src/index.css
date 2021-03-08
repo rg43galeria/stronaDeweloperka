@@ -5,11 +5,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background: url("https://images.unsplash.com/photo-1603288568746-49574bae5224?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80) no-repeat center center fixed");  */
+  background: url("https://images.unsplash.com/photo-1519227355453-8f982e425321?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80"); 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 code {
@@ -32,9 +34,9 @@ code {
   color: rgb(0, 0, 0);
 }
 
-.appbg{
+/* .appbg{
 background-color: rgba(255, 255, 255, 0.5);
-}
+} */
 
 .video-wrapper {
  

@@ -33,7 +33,7 @@ const Home = () => {
   let lang = localStorage.getItem("lang");
 
   return (
-    <Row className="white">
+    <Row className="">
       <Row>
         <Col s={12}>
           <div className="video-wrapper">

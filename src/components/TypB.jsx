@@ -21,6 +21,11 @@ import planparter2 from "./svg/planparter2.svg";
 import planparter3 from "./svg/planparter3.svg";
 import planpietro1a from "./svg/planpietro1a.svg";
 import planpietro1b from "./svg/planpietro1b.svg";
+import carpark from "./svg/carpark.svg"
+import pow from "./svg/52m.svg"
+import taras from "./svg/taras.svg"
+import pokoje3 from "./svg/pokoje3.svg"
+import pietro3d from "./svg/pietro3d.png"
 
 const TypB = () => {
   useEffect(() => {
@@ -30,56 +35,20 @@ const TypB = () => {
 
   return (
     <Row>
-      <div
-        data-aos="fade-right"
-        data-aos-duration="2000"
-        className="hoverable z-depth-2"
-      >
-        <Row>
-          <Col s={12} m={8}>
-            {" "}
-            <img
-              src="https://img.lovepik.com/original_origin_pic/18/05/20/adc00a4eae7b2857a3d6c766a9f5e5a1.png_wh860.png"
-              width="100%"
-            />
-          </Col>
-          <Col s={12} m={4}>
-            <div className="left-align">
-              <h3>
-                Układ Lokali
-                <Divider />
-              </h3>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus
-              <Row/>
-              <Button className="z-depth-2  " large node="a" href="typb">
-       Zarazerwuj lokal
-      </Button>
-            </div>
-          </Col>
-        </Row>
-      </div>
       <Row />
       <div
         data-aos="fade-right"
         data-aos-duration="2000"
-        className="hoverable z-depth-2"
+        className="hoverable white z-depth-5"
       >
         <Row>
-          <Col s={12} m={8}>
+          <Col s={12} m={6}>
             <Row>
-              <Col m={6} push="m3">
+              <Col m={8} push="m1">
                 <div className="valign-wrapper">
                   <div className="left-align">
                     <h3>
-                      Opis Lokalu, standart
+                      Opis Lokalu
                       <Divider />
                     </h3>
                     PageMaker including versions of Lorem Ipsum. Why do we use
@@ -96,12 +65,23 @@ const TypB = () => {
                     (injected humour and the like).
                   </div>
                 </div>
+                <Row/>
+                <Col s={3}>
+                <img className="red" src={pow} width="100%" /> powierzchnia</Col><Col s={3}>
+                <img className="red" src={carpark} width="100%" /> dostępne parkingowe</Col><Col s={3}>
+                <img className="red" src={taras} width="100%" /> taras z wyjściem na ogród</Col><Col s={3}>
+                <img className="red" src={pokoje3} width="100%" /> 3 pokoje plus łazienka i korytarz</Col>
               </Col>
             </Row>
           </Col>
-          <Col s={12} m={4}>
+          <Col s={12} m={6}>
             {" "}
-            <img src={planparter1} width="100%" />
+            <img
+              src={pietro3d}
+              width="100%"
+            /><Button className="red right" node="button" large>
+            Rzut
+          </Button>
           </Col>
         </Row>
       </div>
@@ -109,7 +89,7 @@ const TypB = () => {
       <div
         data-aos="fade-right"
         data-aos-duration="2000"
-        className="hoverable z-depth-2"
+        className="hoverable z-depth-5 white"
       >
         <Row>
           <Col s={12} m={12}>
@@ -136,9 +116,9 @@ const TypB = () => {
           <Row />
           <Row />
           <Col s={12} m={6}>
-          <h5>Poddasze zaadaptowane</h5>
+            <h5>Poddasze zaadaptowane</h5>
             <Iframe
-              url="https://sketchfab.com/models/f95c12beea364444ac50d4ad3ed45a7f/embed"
+              url="https://p3d.in/FgiNH"
               width="100%"
               height="600px"
               id="myId"
@@ -150,7 +130,7 @@ const TypB = () => {
           <Col s={12} m={6}>
             <h5>Poddasze niezaadaptowane</h5>
             <Iframe
-              url="https://sketchfab.com/models/a85b372a3f8d4a7985caea65ca94932b/embed"
+              url="https://p3d.in/3Npzk"
               width="100%"
               height="600px"
               id="myId"
@@ -160,9 +140,9 @@ const TypB = () => {
             />
           </Col>
           <Col s={12}>
-          <div className="center-align">
+            <div className="center-align">
               <h3>
-               Możliwość zakupu lokalu wraz z wykończeniem
+                Możliwość zakupu lokalu wraz z wykończeniem
                 <Divider />
               </h3>
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -174,15 +154,16 @@ const TypB = () => {
               popularised in the 1960s with the release of Letraset sheets
               containing Lorem Ipsum passages, and more recently with desktop
               publishing software like Aldus
-              <br/><Row/>   
-              <Button className="z-depth-2  "  node="a" href="typb">
-        Przejdz do galerii
-      </Button>
+              <br />
+              <Row />
+              <Button className="z-depth-2  " node="a" href="gallery">
+                Przejdz do galerii
+              </Button>
             </div>
           </Col>
-          <Row/>   
+          <Row />
           <Col s={12} m={12}>
-          <Iframe
+            <Iframe
               url="https://www.youtube.com/embed/2pNXZ5V44DE"
               width="100%"
               height="600px"
@@ -193,11 +174,11 @@ const TypB = () => {
             />
           </Col>
           <Col s={12}>
-            <Row/>
+            <Row />
             <Button className="z-depth-2  " large node="a" href="typb">
-       Zarazerwuj lokal
-      </Button>
-      <Row/>
+              Zarazerwuj lokal
+            </Button>
+            <Row />
           </Col>
         </Row>
       </div>

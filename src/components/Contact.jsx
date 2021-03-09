@@ -10,6 +10,7 @@ import Button from "react-materialize/lib/Button";
 import Divider from "react-materialize/lib/Divider";
 import MapIn from "./MapIn";
 import emailjs from 'emailjs-com';
+import Iframe from "react-iframe";
 
 function sendEmail(e) {
   e.preventDefault();
@@ -115,9 +116,18 @@ class Contact extends React.Component {
               <Row></Row>
               <Row></Row>
               <CardPanel className="white z-depth-2">
-                <div id="map" style={{ height: 500 }}>
+                {/* <div id="map" style={{ height: 500 }}>
                   <MapIn />
-                </div>
+                </div> */}
+                 <Iframe
+                  url="https://maps.google.com/maps?q=Czarnochowice%2072,%2032-020%20Czarnochowice&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  width="100%"
+                  height="600px"
+                  id="myId"
+                  className="myClassname"
+                  display="initial"
+                  position="relative"
+                />{" "}
               </CardPanel>
             </Col>
           </Row>
@@ -182,11 +192,20 @@ class Contact extends React.Component {
               <Row></Row>
               <Row></Row>
               <Row></Row>
-              <CardPanel className="white z-depth-2">
-                <div id="map" style={{ height: 500 }}>
+              {/* <CardPanel className="white z-depth-2"> */}
+                {/* <div id="map" style={{ height: 500 }}>
                   <MapIn />
-                </div>
-              </CardPanel>
+                </div> */}
+                        <Iframe
+                  url="https://maps.google.com/maps?q=Czarnochowice%2072,%2032-020%20Czarnochowice&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  width="100%"
+                  height="600px"
+                  id="myId"
+                  className="myClassname z-depth-5"
+                  display="initial"
+                  position="relative"
+                />{" "}
+              {/* </CardPanel> */}
             </Col>
           </Row>
         </div>

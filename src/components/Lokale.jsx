@@ -1,6 +1,7 @@
 import "materialize-css";
 import React, { Component, useEffect } from "react";
 import {
+  Card,
   Button,
   Col,
   Divider,
@@ -10,10 +11,15 @@ import {
   Caption,
   Modal,
   Table,
+  Carousel
 } from "react-materialize";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Lista from "./Lista";
+import axoLokale from "./img/axoLokale.png";
+import axoLokale1 from "./img/axoLokale1.png";
+import axoLokale2 from "./img/axoLokale2.png";
+import axoLokale3 from "./img/axoLokale3.png";
 
 const Lokale = () => {
   useEffect(() => {
@@ -40,52 +46,66 @@ const Lokale = () => {
 
   return (
     <div>
-        <div
+      <div
         data-aos="fade-right"
         data-aos-duration="2000"
-        className="hoverable z-depth-2"
+        className="hoverable z-depth-5 white"
       >
-      <Row>
-      <Col s={12} m={8}>
-            {" "}
-            <img
-              src="https://img.lovepik.com/original_origin_pic/18/05/20/adc00a4eae7b2857a3d6c766a9f5e5a1.png_wh860.png"
-              width="100%"
-            />
-          </Col>
-      <Col s={12} m={4}>
-            <div className="left-align">
-              <h3>
-                Układ Lokali
-                <Divider />
-              </h3>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus
-              <Row/>
+        <Row>
+          
             
-            </div>
-          </Col>
-      </Row>
-   </div>   <Table className="center">
-        {/* <thead>
-          <tr>
-            <th data-field="id">Lokal</th>
-            <th data-field="name">Metraż</th>
-            <th data-field="price">Piętro</th>
-            <th data-field="price">Cena</th>
-            <th data-field="price">Status</th>
-            <th data-field="price">Informacje</th>
-          </tr>
-        </thead> */}
-      </Table>
+            <Col s={12} m={8}>
+              {" "}
+              <Carousel
+  carouselId="Carousel-2"
+  className="white-text center car"
+  options={{
+    fullWidth: true,
+    indicators: true
+  }}
+>
+  <div className="black">
+  <img src={axoLokale} width="100%" />
+  </div>
+  <div className="black">
+  <img src={axoLokale1} width="100%" />
+  </div>
+  <div className="black">
+  <img src={axoLokale2} width="100%" />
+  </div>
+  <div className="black">
+  <img src={axoLokale3} width="100%" />
+  </div>
+
+ 
+</Carousel>
+              
+            </Col>
+            <Col s={12} m={4}>
+              <div className="left-align">
+                <h3>
+                  Układ Lokali
+                  <Divider />
+                </h3>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus
+                <Row />
+              </div>
+            </Col> </Row >
+          
+        
+      </div>{" "}
+
+      <Card className="z-depth-5 white">
       {items}
+      </Card>
     </div>
   );
 };

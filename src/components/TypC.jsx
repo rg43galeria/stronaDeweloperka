@@ -25,8 +25,8 @@ import carpark from "./svg/carpark.svg"
 import pow from "./svg/52m.svg"
 import taras from "./svg/taras.svg"
 import pokoje3 from "./svg/pokoje3.svg"
-import pietro3d from "./img/pietro3d.png"
-
+import arrow from "./svg/arrow.svg"
+import parter3d from "./img/parter3d.webp"
 const TypC = () => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
@@ -44,7 +44,7 @@ const TypC = () => {
         <Row>
           <Col s={12} m={6}>
             <Row>
-              <Col m={8} push="m1">
+              <Col m={10} push="m1">
                 <div className="valign-wrapper">
                   <div className="left-align">
                     <h3>
@@ -77,15 +77,18 @@ const TypC = () => {
           <Col s={12} m={6}>
             {" "}
             <img
-              src={pietro3d}
+              src={parter3d}
               width="100%"
-            /><Button className="red" node="button" small>
+            /><Button className="red right" node="button" large >
             Rzut
           </Button>
           </Col>
         </Row>
       </div>
+      <img src={arrow} width="100%" />
       <Row />
+      
+
       <div
         data-aos="fade-right"
         data-aos-duration="2000"
@@ -96,7 +99,7 @@ const TypC = () => {
             <div className="valign-wrapper">
               <div className="center-align">
                 <h3>
-                  Przykładowe aranżacje wnętrz
+                 Interaktywny Model 3D / Przykładowe aranżacje wnętrz
                   <Divider />
                 </h3>
                 PageMaker including versions of Lorem Ipsum. Why do we use it?
@@ -115,10 +118,10 @@ const TypC = () => {
           </Col>
           <Row />
           <Row />
-          <Col s={12} m={6}>
-            <h5>Poddasze zaadaptowane</h5>
+          <Col s={12} m={6} push='m3'>
+            <h5>Rzut Parteru</h5>
             <Iframe
-              url="https://p3d.in/FgiNH"
+              url="https://p3d.in/KAWGK"
               width="100%"
               height="600px"
               id="myId"
@@ -127,18 +130,7 @@ const TypC = () => {
               position="relative"
             />
           </Col>{" "}
-          <Col s={12} m={6}>
-            <h5>Poddasze niezaadaptowane</h5>
-            <Iframe
-              url="https://p3d.in/3Npzk"
-              width="100%"
-              height="600px"
-              id="myId"
-              className="myClassname"
-              display="initial"
-              position="relative"
-            />
-          </Col>
+         
           <Col s={12}>
             <div className="center-align">
               <h3>
@@ -164,7 +156,18 @@ const TypC = () => {
           <Row />
           <Col s={12} m={12}>
             <Iframe
-              url="https://www.youtube.com/embed/2pNXZ5V44DE"
+              url="https://www.youtube.com/embed/-Lrw0ZWwC-o"
+              width="100%"
+              height="600px"
+              id="myId"
+              className="myClassname"
+              display="initial"
+              position="relative"
+            />
+          </Col>
+          <Col s={12} m={12}>
+            <Iframe
+              url="https://www.youtube.com/embed/26PVBGNEOO4"
               width="100%"
               height="600px"
               id="myId"
@@ -175,7 +178,7 @@ const TypC = () => {
           </Col>
           <Col s={12}>
             <Row />
-            <Button className="z-depth-2  " large node="a" href="typb">
+            <Button className="z-depth-2  " large node="a" href="contact">
               Zarazerwuj lokal
             </Button>
             <Row />

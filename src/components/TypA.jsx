@@ -156,7 +156,18 @@ const TypA = () => {
           <Row />
           <Col s={12} m={12}>
             <Iframe
-              url="https://www.youtube.com/embed/2pNXZ5V44DE"
+              url="https://www.youtube.com/embed/-Lrw0ZWwC-o"
+              width="100%"
+              height="600px"
+              id="myId"
+              className="myClassname"
+              display="initial"
+              position="relative"
+            />
+          </Col>
+          <Col s={12} m={12}>
+            <Iframe
+              url="https://www.youtube.com/embed/26PVBGNEOO4"
               width="100%"
               height="600px"
               id="myId"
@@ -167,7 +178,7 @@ const TypA = () => {
           </Col>
           <Col s={12}>
             <Row />
-            <Button className="z-depth-2  " large node="a" href="TypA">
+            <Button className="z-depth-2  " large node="a" href="contact">
               Zarazerwuj lokal
             </Button>
             <Row />

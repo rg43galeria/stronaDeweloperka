@@ -39,7 +39,7 @@ const Home = () => {
     <Row className="">
       <Row>
         <Col s={12}>
-          <div className="video-wrapper z-depth-5">
+          <div className="video-wrapper z-depth-5 hide-on-small-only">
             <ReactPlayer
               // className="react-player"
               url="https://youtu.be/e2pJmZU8rdA"
@@ -50,16 +50,18 @@ const Home = () => {
               loop={true}
             />
           </div>
-          {/* <Iframe
-          url="https://www.youtube.com/embed/BSF5yoD-vC4"
-          width="100%"
-          height="600px"
-          id="myId"
-          allow='autoplay; encrypted-media'
-          className="myClassname"
-          display="initial"
-          position="relative"
-        /> */}
+          <div className="video-wrapper z-depth-5 hide-on-med-and-up">
+            <ReactPlayer
+              // className="react-player"
+              url="hhttps://www.youtube.com/embed/jvhw7ms6fXI "
+              playing={true}
+              muted={true}
+              width="100%"
+              height="500px"
+              loop={true}
+            />
+          </div>
+       
         </Col>
       </Row>
       <img src={arrow} width="100%" />
@@ -74,7 +76,7 @@ const Home = () => {
         >
           <Card>
             <h5>
-              Domy Czernochowice
+              Domy Czarnochowice
               <Divider />
             </h5>
             <Row />

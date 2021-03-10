@@ -18,7 +18,7 @@ const Nav = () => {
     return (
       <Row className="navbar">
         <Col m={10} push="m1">
-          <h3>Domy Czernochowice</h3>
+          <h3>Domy Czarnochowice</h3>
           <Link to="home" className="navbaritem">
             O inwestycji
           </Link>

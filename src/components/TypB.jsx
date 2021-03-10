@@ -164,7 +164,29 @@ const TypB = () => {
           <Row />
           <Col s={12} m={12}>
             <Iframe
-              url="https://www.youtube.com/embed/2pNXZ5V44DE"
+              url="https://www.youtube.com/embed/EYG7zL0qaS8"
+              width="100%"
+              height="600px"
+              id="myId"
+              className="myClassname"
+              display="initial"
+              position="relative"
+            />
+          </Col>
+          <Col s={12} m={12}>
+            <Iframe
+              url="https://www.youtube.com/embed/VPTWNZoGClk"
+              width="100%"
+              height="600px"
+              id="myId"
+              className="myClassname"
+              display="initial"
+              position="relative"
+            />
+          </Col>
+          <Col s={12} m={12}>
+            <Iframe
+              url="https://www.youtube.com/embed/DC7bFnzOIfE"
               width="100%"
               height="600px"
               id="myId"
@@ -175,7 +197,7 @@ const TypB = () => {
           </Col>
           <Col s={12}>
             <Row />
-            <Button className="z-depth-2  " large node="a" href="typb">
+            <Button className="z-depth-2  " large node="a" href="contact">
               Zarazerwuj lokal
             </Button>
             <Row />

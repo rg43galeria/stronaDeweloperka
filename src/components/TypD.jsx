@@ -39,7 +39,7 @@ const TypD = () => {
           <Col s={12} m={8}>
             {" "}
             <img
-              src="https://img.lovepik.com/original_origin_pic/18/05/20/adc00a4eae7b2857a3d6c766a9f5e5a1.png_wh860.png"
+              src="https://img.lovepik.com/original_origin_pic/18/05/20/adc00a4eae7b2857a3d6c766a9f5e5a1.webp_wh860.webp"
               width="100%"
             />
           </Col>

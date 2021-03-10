@@ -25,7 +25,7 @@ import carpark from "./svg/carpark.svg"
 import pow from "./svg/52m.svg"
 import taras from "./svg/taras.svg"
 import pokoje3 from "./svg/pokoje3.svg"
-import pietro3d from "./svg/pietro3d.png"
+import pietro3d from "./img/pietro3d.png"
 
 const TypC = () => {
   useEffect(() => {

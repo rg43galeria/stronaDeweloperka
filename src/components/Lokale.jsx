@@ -16,10 +16,10 @@ import {
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Lista from "./Lista";
-import axoLokale from "./img/axoLokale.png";
-import axoLokale1 from "./img/axoLokale1.png";
-import axoLokale2 from "./img/axoLokale2.png";
-import axoLokale3 from "./img/axoLokale3.png";
+import axoLokale from "./img/axoLokale.webp";
+import axoLokale1 from "./img/axoLokale1.webp";
+import axoLokale2 from "./img/axoLokale2.webp";
+import axoLokale3 from "./img/axoLokale3.webp";
 
 const Lokale = () => {
   useEffect(() => {

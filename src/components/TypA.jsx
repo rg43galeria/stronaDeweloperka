@@ -26,7 +26,7 @@ import pow from "./svg/52m.svg"
 import taras from "./svg/taras.svg"
 import pokoje3 from "./svg/pokoje3.svg"
 import arrow from "./svg/arrow.svg"
-import parter3d from "./img/parter3d.png"
+import parter3d from "./img/parter3d.webp"
 const TypA = () => {
   useEffect(() => {
     Aos.init({ duration: 1000 });

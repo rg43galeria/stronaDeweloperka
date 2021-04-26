@@ -9,7 +9,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url(../src/components/img/bg.webp); 
+  /* background: url(../src/components/img/bg.webp);  */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -18,27 +18,72 @@ body {
   background-attachment: fixed;
   
 }
+.artist{
+  border-radius: 50%;
+}
 
-
+.exhibitionCard{
+  z-index: -1;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-/* .navbar{
-  align-self: start;
-} */
+.homeCaption{
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+color: white;
+}
+.rodo{
+  font-size: 1vh;
+}
+.navbar{
+  position: fixed;
+  top: 0vw;
+  right:0vw;
+  height: 3vh;
+  z-index: 3;
+  width: 100vw;
+  background-color: rgba(27, 27, 27, 0.8);
+  
+  align-items: flex-end;
+}
+.sideNav{
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 7vw;
+  height: 100vh;
+  background-color: rgba(27, 27, 27, 0.8);
+  z-index: 3;
+  color: white;
+  justify-content: space-evenly;
+}
+.sideNavItem
+{
+margin-top: 5vh;
+color: white;
+}
+.sideNavItem:hover{
+  font-size: 180%; 
+  color: rgb(255, 255, 255);
+}
 .navbaritem{
   justify-content: space-evenly;
-  color: rgb(82, 82, 82);
+  color: rgb(255, 255, 255);
   margin-left: 1vw;
   margin-right: 1vw;
+  top: 2vh;
   font-size: 120%;
+  margin-bottom: 2vw;
+top: 5vw;
+z-index: 3;
+  
 }
 
 .navbaritem:hover{
-  /* font-size: 30px; */
-  color: rgb(0, 0, 0);
+  font-size: 120%; 
+  color: rgb(255, 0, 0);
 }
 
 /* .appbg{

@@ -10,7 +10,10 @@ import {
   Caption,
   Table,
   Card,
+  Slider,
 } from "react-materialize";
+import { Link } from "react-router-dom";
+
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Lista from "./Lista";
@@ -34,223 +37,110 @@ const Home = () => {
 
   let lang = localStorage.getItem("lang");
 
-
   return (
-    <Row className="">
-      <Row>
-        <Col s={12}>
-          <div className="video-wrapper z-depth-5 hide-on-small-only">
-            <ReactPlayer
-              // className="react-player"
-              url="https://youtu.be/e2pJmZU8rdA"
-              playing={true}
-              muted={true}
-              width="100%"
-              height="750px"
-              loop={true}
+    <Row>
+      <Slider
+        fullscreen={true}
+        options={{
+          duration: 500,
+          height: 400,
+          indicators: true,
+          interval: 6000,
+        }}
+      >
+        <Slide
+          image={
+            <img
+              alt=""
+              src="https://images.unsplash.com/photo-1453791052107-5c843da62d97?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmFpcnl8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
             />
-          </div>
-          <div className="video-wrapper z-depth-5 hide-on-med-and-up">
-            <ReactPlayer
-              // className="react-player"
-              url="hhttps://www.youtube.com/embed/jvhw7ms6fXI "
-              playing={true}
-              muted={true}
-              width="100%"
-              height="500px"
-              loop={true}
-            />
-          </div>
-       
-        </Col>
-      </Row>
-      <img src={arrow} width="100%" />
-      <Row />
-      <Row />
-      <Row />
-      <Row>
-        <div
-          data-aos="fade-right"
-          data-aos-duration="2000"
-          className="hoverable z-depth-6"
+          }
         >
-          <Card>
-            <h5>
-              Domy Czarnochowice
+          <Caption placement="right" className="homeCaption">
+            <h3>
+              Wystawa 1 - bajki w bakjach
               <Divider />
+            </h3>
+            <h5 className=" ">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco
             </h5>
-            <Row />
-            <Row />
-            <Row />
-            <Row>
-              <Col m={6} s={12}>
-                <div className="left-align  ">
-                  Nasze domy szeregowe wyróżniają się nowoczesną architekturą
-                  oraz wysokim standardem. W realizacjach Real Invest szczególną
-                  uwagę przywiązujemy do przeszkleń, dzięki czemu oferowane
-                  przez nas wnętrza są słoneczne, a sama bryła budynku sprawia
-                  wrażenie lżejszej. Damy również o estetykę i funkcjonalność
-                  zagospodarowania części wspólnych naszych osiedli, dzięki
-                  czemu są przestrzeniami przyjaznymi dla mieszkańców
-                  niezależnie od wieku.
-                </div>
-                <Row />
-                <Row>
-                  <Col s={4}>
-                    <img src={autostrada} width="60%" />
-                    <br />5 minut od autostrady
-                  </Col>
-                  <Col s={4}>
-                    <img src={karkowwieliczka} width="60%" />
-                    <br />
-                    Na granicy Krakowa i Wieliczki
-                  </Col>
-                  <Col s={4}>
-                    <img src={layout} width="60%" />
-                    <br />
-                    Praktyczny i adaptowalny uklad przestrzenny
-                  </Col>
-                  <Col s={4}>
-                    <img src={silence} width="60%" />
-                    <br />
-                    Cicha i spokojna okolica
-                  </Col>
-                  <Col s={4}>
-                    <img src={ogrod} width="60%" />
-                    <br />
-                    Kazdy lokal z przydzielonym, ogrodzonym ogrodkiem
-                  </Col>
-                  <Col s={4}>
-                    <img src={windows} width="60%" />
-                    <br />
-                    Duze przeszklenia
-                  </Col>
-                </Row>
-              </Col>
-
-              <Col m={6} s={12}>
-              <Iframe
-  url="https://p3d.in/RNOMQ"
-  width="100%"
-  height="600px"
-  id="myId"
-  className="myClassname "
-  display="initial"
-  position="relative"
-/>
-              </Col>
-            </Row>
-          </Card>
-        </div>
-      </Row>
-      <Row>
-        <div
-          data-aos="fade-right"
-          data-aos-duration="2000"
-          className="hoverable z-depth-2"
+            <Link to="wystawa1" className="btn-large black z-depth-3">
+              Więcej informacji
+            </Link>
+          </Caption>
+        </Slide>
+        <Slide
+          image={
+            <img
+              alt=""
+              src="https://images.unsplash.com/photo-1432958576632-8a39f6b97dc7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZmFpcnl8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            />
+          }
         >
-          <Card className="z-depth-5">
-            <h5>
-              Lokalizacja <Divider />
+          <Caption placement="left" className="homeCaption">
+            <h3>
+              Wystawa 2 - drzewa w bakjach
+              <Divider />
+            </h3>
+            <h5 className=" ">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco
             </h5>
-            <Row />
-            <Row />
-            <Row />
-            <Row>
-              <Col m={6} s={12}>
-                <div className="left-align  ">
-                  Oferowane przez Real Invest nowe segmenty usytuowane są w
-                  spokojnej, cichej okolicy. Znajdują się one z dala od centrum
-                  miasta, do którego mieszkańcy mają jednak ułatwiony dostęp
-                  dzięki kursującym tutaj miejskim autobusom i tramwajom.
-                  Systematycznie wzbogacamy rynek pierwotny o kolejne domy
-                  zaprojektowane według najnowocześniejszych technologii. W
-                  wielu z nich zamontowano nowoczesne systemy bezpieczeństwa.
-                  Dzięki łączności Wi-Fi można sterować z dowolnego miejsca m.
-                  in. ogrzewaniem, oświetleniem czy działaniem systemu
-                  alarmowego.
-                  <br />
-                  <br />
-                  <br />
-                  <Row>
-                    <Col m={2}></Col>
-                    <Col m={8}>
-                      <div>
-                        <h5>
-                          <li>Centrum Wieliczki - 3,5km</li>
-                          <br />
-                          <li>Stacja Kolejowa Kokotow - 1km</li>
-                          <br />
-                          <li>Rynek Glowny - 13,7km</li>
-                          <br />
-                          <li>Autostrada - 1km</li>
-                          <br />
-                          <li>Paczkomat Inpost - 500m</li>
-                          <br />
-                        </h5>
-                      </div>
-                    </Col>
-                  </Row>
-                </div>
-                <div className="left-align">
-                  Dziekilokalizacji obiektow przysli wlasciciele nieruchomosci
-                  moga liczyc na:
-                  <br />
-                  Obnizone koszta zycia w stosunku do Krakowa
-                  <br />
-                  Swietny dostep do aotostrady i stacji kolejowej
-                </div>
-              </Col>
-              <Col m={6} s={12}>
-                <Iframe
-                  url="https://maps.google.com/maps?q=Czarnochowice%2072,%2032-020%20Czarnochowice&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                  width="100%"
-                  height="600px"
-                  id="myId"
-                  className="myClassname"
-                  display="initial"
-                  position="relative"
-                />{" "}
-              </Col>
-            </Row>
-          </Card>
-        </div>
-      </Row>
-      <Row>
-        <div
-          data-aos="fade-right"
-          data-aos-duration="2000"
-          className="hoverable z-depth-2"
+            <Link to="wystawa2" className="btn-large black z-depth-3">
+              Więcej informacji
+            </Link>
+          </Caption>
+        </Slide>
+        <Slide
+          image={
+            <img
+              alt=""
+              src="https://images.unsplash.com/photo-1499343162160-cd1441923dd3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8ZmFpcnl8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            />
+          }
         >
-          <Card className="z-depth-5">
-            <h5>
-              Terminy <Divider />
+          <Caption placement="right" className="homeCaption">
+            <h3>
+              Wystawa 3 - krzaki w bakjach
+              <Divider />
+            </h3>
+            <h5 className=" ">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco
             </h5>
-            <Row />
-            <Col s={12} m={4}>
-              <img  className="red" src={sprzedaz} width="70%" />
-              <br />
-         
-            </Col>
-            <Col s={12} m={4}>
-              <img className="red" src={budowa} width="70%" />
-              <br />
-     
-            </Col>
-            <Col s={12} m={4}>
-              <img className="red" src={oddanie} width="70%" />
-              <br />
-           
-            </Col>
-            <Row>
-              <Col m={6} s={12}>
-                <div className="left-align  "></div>
-              </Col>
-              <Col m={6} s={12}></Col>
-            </Row>
-          </Card>
-        </div>
-      </Row>
+            <Link to="wystawa3" className="btn-large black z-depth-3">
+              Więcej informacji
+            </Link>
+          </Caption>
+        </Slide>
+        <Slide
+          image={
+            <img
+              alt=""
+              src="https://images.unsplash.com/photo-1526025202335-cf944dc3f799?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzd8fGZhaXJ5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            />
+          }
+        >
+          <Caption placement="center" className="homeCaption">
+            <h3>
+              Wystawa 4 - samoloty w bakjach
+              <Divider />
+            </h3>
+            <h5 className=" ">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco
+            </h5>
+            <Link to="wystawa4" className="btn-large black z-depth-3">
+              Więcej informacji
+            </Link>
+          </Caption>
+        </Slide>
+      </Slider>
     </Row>
   );
 };

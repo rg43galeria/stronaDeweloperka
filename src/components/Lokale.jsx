@@ -30,17 +30,9 @@ const Lokale = () => {
 
   const items = Lista.map((Lista) => {
     return (
-      <Table>
-        <tr className="hoverable">
-          <td>{Lista.Lokal}</td>
-          <td>{Lista.Metraz}</td>
-          <td>{Lista.Pietro}</td>
-          <td>{Lista.Cena}</td>
-          <td>{Lista.Status}</td>
-          <td>{Lista.Rzut}</td>
-          <td>{Lista.Informacje}</td>
-        </tr>
-      </Table>
+      <div>
+        
+      </div>
     );
   });
 

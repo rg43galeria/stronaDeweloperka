@@ -16,29 +16,39 @@ const Nav = () => {
   if (lang == "en") return <Row></Row>;
   else
     return (
-      <Row className="navbar">
-        <Col m={10} push="m1">
-          <h3>Domy Czarnochowice</h3>
-          <Link to="home" className="navbaritem">
-            O inwestycji
+      <div className="navbar right-align">
+        <Col m={10} push="m2">
+        <Link to="home" className="navbaritem">
+            Home
+          </Link>
+          <Link to="artysci" className="navbaritem">
+            Artyści
           </Link>
 
-          <Link to="portfolio" className="navbaritem">
-            Standart
+          <Link to="wystawy" className="navbaritem">
+            Wystawy
           </Link>
-          
+          <Link to="portfolio" className="navbaritem">
+            Archiwum
+          </Link>
           <Link to="offer" className="navbaritem">
-            Lokale
+            Sklep
           </Link>
           <Link to="gallery" className="navbaritem">
-            Galeria
+            Nowe eksponaty
+          </Link>
+          <Link to="contact" className="navbaritem">
+            O nas
+          </Link>
+          <Link to="contact" className="navbaritem">
+            Partnerzy
           </Link>
           <Link to="contact" className="navbaritem">
             Kontakt
           </Link>
-          <Divider/>
+     
         </Col>
-      </Row>
+      </div>
     );
 };
 
